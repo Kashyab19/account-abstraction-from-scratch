@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC-4337 Browser Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this line to load ethers.js -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>ERC-4337 Browser Wallet</h1>
+        <div id="wallet-info">
+            <p>Wallet Address: <span id="wallet-address">Not connected</span></p>
+            <p>Balance: <span id="wallet-balance">0 ETH</span></p>
+        </div>
+        <button id="connect-wallet">Connect Wallet</button>
+        <button id="create-account">Create ERC-4337 Account</button>
+        <div id="actions">
+            <h2>Actions</h2>
+            <button id="increment-counter">Increment Counter</button>
+            <p>Counter Value: <span id="counter-value">0</span></p>
+            <div id="transfer-section">
+                <input type="text" id="transfer-to" placeholder="Recipient Address">
+                <input type="number" id="transfer-amount" placeholder="Amount (ETH)">
+                <button id="transfer">Transfer ETH</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
